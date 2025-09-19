@@ -1,4 +1,4 @@
-public class BitManipulation{
+public class BinToDec{
     public static void binToDec(int binNum){
         int pow = 0;
         int decNum = 0;
