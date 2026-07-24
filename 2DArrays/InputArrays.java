@@ -1,27 +1,46 @@
-import java.util.Scanner;
+
 
 public class InputArrays {
        public static void main(String[] args) {
-        int[][] arr= new int[3][4];
-        int sum = 0;
-        int mul = arr.length;
-        Scanner sc= new Scanner(System.in);
-        for(int i = 0; i<arr.length; i++){
-            for(int j =0; j< arr[i].length; j++){
-                arr[i][j] = sc.nextInt();
-            }
-        }
-        for(int i = 0; i<= arr.length-1; i++){
+
+int [][] arr = {
+    {1,2},
+    {12345,12345},
+    {987,98}
+    
+};
+int max= arr[0][0];
+for(int i = 0; i<= arr.length-1; i++){
         int colLength = arr[i].length;
         for(int j = 0; j<= colLength-1; j++){
-            int value = arr[i][j];
-            sum = sum+value;
-            mul = mul*value;
-           System.out.print(arr[i][j] + ",");
+            if (arr[i][j]>max) {
+                max = arr[i][j];
+            }
+         
         }
-        System.out.println(mul);
+System.out.println(max);
+
+    //     int[][] arr= new int[3][4];
+    //     int sum = 0;
+    //     int mul = arr.length;
+    //     Scanner sc= new Scanner(System.in);
+    //     for(int i = 0; i<arr.length; i++){
+    //         for(int j =0; j< arr[i].length; j++){
+    //             arr[i][j] = sc.nextInt();
+    //         }
+    //     }
+    //     for(int i = 0; i<= arr.length-1; i++){
+    //     int colLength = arr[i].length;
+    //     for(int j = 0; j<= colLength-1; j++){
+    //         int value = arr[i][j];
+    //         sum = sum+value;
+    //         mul = mul*value;
+    //        System.out.print(arr[i][j] + ",");
+    //     }
+    //     System.out.println(mul);
 
 
-    }
+    // }
        }
+    }
 }
