@@ -12,9 +12,9 @@ public class Arrays {
         {5,6}
     };
 
-    int rowLength = brr.length;
     
-    for(int i = 0; i<= rowLength-1; i++){
+    
+    for(int i = 0; i<= brr.length-1; i++){
         int colLength = brr[i].length;
         for(int j = 0; j<= colLength-1; j++){
            System.out.print(brr[i][j] + ",");
