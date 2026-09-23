@@ -13,9 +13,8 @@ public class MaxValue {
     // }
 
     public static int maxValue(int arr[]){
-        int n = arr.length;
         int maximum = arr[0];
-        for(int i = 0; i <= n-1; i++){
+        for(int i = 0; i < arr.length; i++){
             if(arr[i]> maximum){
                 maximum = arr[i];
             }
@@ -25,7 +24,7 @@ public class MaxValue {
     }
 
     public static void main(String[] args) {
-        int[] ans = {1, 20, 30, 40};
+        int[] ans = {-1, -20, -30, -40};
         System.out.println(maxValue(ans));
     }
 }

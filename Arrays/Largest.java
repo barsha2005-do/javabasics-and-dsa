@@ -1,13 +1,13 @@
 public class Largest {
 
-    public static int[] getLargest(int[] num){
-        int largest= Integer.MIN_VALUE;
+    public static int getLargest(int[] num){
+        int largest= num[0];
         for(int i=0; i<num.length; i++){
             if (largest<num[i]) {
                 largest = num[i];
             }
         }
-        return num;
+        return largest;
 
     }
     public static void main(String[] args) {
