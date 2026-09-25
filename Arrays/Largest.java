@@ -14,7 +14,11 @@ throw new IllegalArgumentException("you need to add the valid amount of elements
             else if (num[i] < largest && num[i] > secondLargest)  {
                 secondLargest = num[i];
             }
+
         }
+        if (secondLargest == Integer.MIN_VALUE) {
+    throw new IllegalArgumentException("message");
+}
         return secondLargest;
 
     }
