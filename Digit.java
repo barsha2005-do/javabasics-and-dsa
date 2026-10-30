@@ -118,32 +118,46 @@ public class Digit {
     // System.out.println(count);
     // }
 
+    // public static void main(String[] args) {
+    // int digit = 1333488999;
+    // int max = Integer.MIN_VALUE;
+    // int min = Integer.MAX_VALUE;
+    // int count = 0;
+    // if (digit == 0) {
+    // max = 0;
+    // min = 0;
+    // } else {
+    // while (digit > 0) {
+    // int rem = digit % 10;
+    // if (rem > max) {
+    // max = rem;
+    // count = 1;
+
+    // } else if (rem == max) {
+    // count++;
+    // }
+
+    // if (rem < min) {
+    // min = rem;
+    // }
+    // digit = digit / 10;
+    // }
+    // }
+    // System.out.println(max);
+    // System.out.println("here max appers " + count + " times");
+    // System.out.println(min);
+    // }
     public static void main(String[] args) {
-        int digit = 1333488999;
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-        int count = 0;
-        if (digit == 0) {
-            max = 0;
-            min = 0;
-        } else {
-            while (digit > 0) {
-                int rem = digit % 10;
-                if (rem > max) {
-                    max = rem;
-                    count++;
-
-                }
-
-                if (rem < min) {
-                    min = rem;
-                }
-                digit = digit / 10;
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 4 - i; j++) {
+                System.out.print(" ");
             }
+            for (int k = 1; k <= i * 2 - 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        System.out.println(max);
-        System.out.println("here max appers " + count + " times");
-        System.out.println(min);
+
     }
 
 }
